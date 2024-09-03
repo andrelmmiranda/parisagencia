@@ -1,0 +1,96 @@
+.wedo {
+    background-color: #fff;
+}
+
+#wedo .container {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 40px 0; */
+
+    /* height: 400px; */
+}
+
+#wedo .card {
+    background-color: transparent;
+    color: var(--marrom);
+    border: none;
+    text-align: center;
+
+    margin: 20px 0;
+}
+
+#wedo .card span {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+
+    /* background-color: #721012bb; */
+
+    background-color: var(--bege);
+
+    font-weight: 100;
+
+    width: 92px;
+    height: 92px;
+
+    display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    padding: 8px;
+}
+
+
+
+#wedo .card i {
+    font-size: 48px;
+    /* color: var(--marrom); */
+    color: var(--vinho);
+    font-weight: 100;
+    text-align: center;
+}
+
+#wedo .card .card-title {
+    color: var(--vinho);
+}
+
+#wedo .box-features {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 0;
+}
+
+#wedo .features-header {
+    /* border: solid red; */
+    text-align: center;
+    margin-bottom: 28px;
+    max-width: 95%;
+}
+
+@media (min-width: 768px){
+
+    #wedo .features-header {
+        margin-bottom: 40px;
+    }
+    
+    #wedo .features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 100%;
+
+        /* border: 1px solid red; */
+    }
+
+    #wedo .card {
+        margin: 0;
+    }
+    
+}

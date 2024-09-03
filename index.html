@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Agência - Agência de Marketing Digital</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" href="img/paris_icon2_redone_v1.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wedo.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        .icon-group {
+            display: flex;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .header .navbar .nav-link i {
+            /* Tamanho dos ícones */
+            font-size: 18px;
+            /* Cor dos ícones */
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .header .navbar .nav-link i:hover {
+            /* Cor dos ícones ao passar o mouse */
+            color: var(--marrom);
+        }
+
+        .no-scroll {
+            overflow: hidden;
+        }
+
+        
+    </style>
+
+</head>
+
+<body id="body">
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="img/paris_logo_v1.jpg" alt="">
+                </a>
+                <button class="navbar-toggler openbtn" type="button" aria-label="Toggle navigation" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#body">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#wedo">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Contato</a>
+                        </li>
+                        <li class="nav-item icon-group">
+                            <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+
+        <div id="mySidebar" class="sidebar">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <ul class="">
+                <li class="">
+                    <a class="nav-link" href="#body" onclick="closeNav()">Home</a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="#wedo" onclick="closeNav()">Serviços</a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="#about" onclick="closeNav()">Quem Somos</a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="#about" onclick="closeNav()">Contato</a>
+                </li>
+                <li class="icon-group">
+                    <a class="nav-link" href="#" onclick="closeNav()"><i class="bi bi-instagram"></i></a>
+                    <a class="nav-link" href="#" onclick="closeNav()"><i class="bi bi-whatsapp"></i></a>
+                    <a class="nav-link" href="#" onclick="closeNav()"><i class="bi bi-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="main" id="main">
+        <div class="container">
+            <div class="content">
+                <h3>Conheçam a</h3>
+                <h1>Paris Agência</h1>
+                <p>agência de marketing que infunde inovação e alegria em cada criação.</p>
+                <button>Entre em contato!</button>
+            </div>
+            <div class="image"></div>
+        </div>
+    </main>
+
+    <section class="wedo" id="wedo">
+        <div class="container box-features">
+            <div class="features-header">
+                <h2>Lorem ipsum</h2>
+                <p>Nam tristique porta metus, rutrum semper libero gravida eget.</p>
+            </div>
+            <div class="features">
+                <div class="card" style="width: 18rem;">
+                    <span><i class="bi bi-signpost-split"></i></span>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <span><i class="bi bi-signpost-split"></i></span>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span><i class="bi bi-signpost-split"></i></span>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="container box-about">
+            <div class="about-features">
+                <div class="about-content">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada lacus ultrices dictum ultricies.</p>
+                    <!-- <button>Entre em contato!</button> -->
+                </div>
+                <div class="about-image">
+                    <img src="img/imagem-about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <form id="contact-form">
+                <!-- <label for="nome">Nome Completo:</label> -->
+                <input type="text" id="nome" name="nome" placeholder="Nome" required><br><br>
+              
+                <!-- <label for="email">E-mail:</label> -->
+                <input type="email" id="email" name="email" placeholder="E-mail" required><br><br>
+              
+                <!-- <label for="mensagem">Mensagem:</label><br> -->
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Mensagem" required></textarea><br><br>
+              
+                <input type="submit" value="Enviar">
+              </form>
+              
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container box-footer">
+            
+                <div class="logo">
+                    <img src="img/paris_logo_raw.png" alt="">
+                </div>
+                <div class="contact info">
+                    <h5>Contato</h5>
+                    <ul>
+                        <li class="">
+                            <a class="nav-link" href="#body" onclick="closeNav()"><i class="bi bi-envelope-fill"></i> mail@mail.com.br</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="#wedo" onclick="closeNav()"><i class="bi bi-telephone-fill"></i> 21 99999-9999</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigate info">
+                    <h5>Navegar</h5>
+                    <ul>
+                        <li class="">
+                            <a class="nav-link" href="#body" onclick="closeNav()">Home</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="#wedo" onclick="closeNav()">Serviços</a>
+                        </li>
+                        <i class="">
+                            <a class="nav-link" href="#about" onclick="closeNav()">Quem Somos</a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link" href="#about" onclick="closeNav()">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container box-footer-append">
+            <p>&copy; 2024 Paris Agência</p>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").classList.add("open");
+            document.querySelector(".content").classList.add("shifted");
+
+            document.querySelector("body").classList.add("no-scroll");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").classList.remove("open");
+            document.querySelector(".content").classList.remove("shifted");
+
+            document.querySelector("body").classList.remove("no-scroll");
+        }
+
+
+        $(document).ready(function() {
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault(); // Impede o comportamento padrão
+
+                const targetId = $(this).attr('href'); // Obtém o ID da seção a partir do href
+
+                console.log(targetId)
+
+                const headerOffset = 66; // Altura do header fixo
+                const targetElement = $(targetId); // Obtém o elemento da seção
+
+                if (targetElement.length) {
+                    // Calcula a posição ajustada da seção
+                    const offsetPosition = targetElement.offset().top - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+.main {
+    /* border: 1px solid red; */
+    background-color: var(--bege);
+    display: flex;
+    justify-content: center;
+
+    /* margin-top: 66px; */
+    
+}
+
+#main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+
+    height: 500px;
+}
+
+#main .content {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border: none;
+}
+
+#main .image {
+    /* background-color: var(--vinho);*/
+    background-image: url('../img/eiffel_png8_v1.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    width: 100%;
+    height: inherit;
+}
+
+.main h1 {
+    color: var(--vinho);
+}
+
+.main .content button {
+    background-color: var(--vinho); 
+    color: #fff; 
+    padding: 12px 24px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main .content button:hover {
+    background-color: #ff4e42; 
+    background-color: #FF0101; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.main .content button:active {
+    transform: translateY(-1px); 
+}
+
+@media (min-width: 667px) {
+    #main .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        height: 400px; 
+
+        padding: 0;
+    } 
+
+
+    #main .content {
+        width: 50%; 
+        z-index: 2;        
+        border-top: 1px solid var(--marrom);
+        border-left: 1px solid var(--marrom);
+
+        background-color: transparent;
+    } 
+
+    #main .image {
+        background-color: transparent;
+        background-image: url('../img/eiffel_png8_v1.png');
+
+        background-position: right top;
+        background-repeat: no-repeat;
+
+        background-size: unset;
+
+        width: 50%;
+        height: inherit;
+
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+   
+
+    #main .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        
+        height: 400px; 
+
+        padding: 0;
+    } 
+
+
+    #main .content {
+        width: 50%; 
+        z-index: 2;        
+        border-top: 1px solid var(--marrom);
+        border-left: 1px solid var(--marrom);
+
+        background-color: transparent;
+    } 
+
+    #main .image {
+        background-color: transparent;
+        background-image: url('../img/eiffel_png8_v1.png');
+
+        background-position: right top;
+        background-repeat: no-repeat;
+
+        background-size: unset;
+
+        width: 50%;
+        height: inherit;
+
+        padding: 0;
+    }
+}
+
+

@@ -1,0 +1,49 @@
+:root {
+    --preto: #000;
+    --bege: #F0ECE2;
+    --vinho: #721011;
+    --marrom: #1F1513;
+
+    --main-font: 'Poppins';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::before {
+    content: '';
+    display: block;
+
+    height: 66px;
+
+    /* z-index: 9; */
+
+    border: 1px solid red;
+}
+
+body {
+    font-family: var(--main-font), sans-serif !important;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    /* border: solid blue; */
+}
+
+@media (min-width: 768px){
+    .container {
+        flex-direction: row;
+    }
+}

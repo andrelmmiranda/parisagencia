@@ -1,0 +1,128 @@
+.header {
+    background-color: var(--vinho);
+
+    position: fixed;
+    width: 100%;
+
+    z-index: 10;
+
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    position: relative;
+    background-color: transparent;
+}
+
+.navbar-toggler {
+    z-index: 1039;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+
+#header .container .navbar.navbar-expand-lg.navbar-light {
+    /* border: 1px solid blue !important; */
+    width: 100%;
+}
+
+#header .container .navbar .logo {
+    max-height: 40px;
+    height: auto;
+    width: auto;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--vinho);
+    transition: 0.3s;
+    overflow-x: hidden;
+    z-index: 1040;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--preto);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: var(--vinho);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: #000;
+    cursor: pointer;
+}
+
+.header .nav-item {
+    padding: 0 8px;
+    margin: 6px;
+    border-bottom: 1px solid transparent;
+}
+
+.header .nav-item:last-child {
+    padding: 0 6px;
+    border-bottom: 1px solid transparent;
+}
+
+.header .nav-item:hover:not(:last-child) {
+    border-bottom: 1px solid #fff;
+}
+
+.header .nav-link {
+    color: #fff !important;
+}
+
+.header .nav-link:hover {
+    color: var(--bege) !important;
+}
+
+
+
+.openbtn {
+    cursor: pointer;
+}
+
+.sidebar.open {
+    width: calc(100% - 20px);
+}
+
+.header .content {
+    transition: margin-left 0.3s;
+}
+
+.header .content.shifted {
+    margin-left: 250px;
+}
+
+
+@media (min-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .header .content {
+        margin-left: 0;
+    }
+}
